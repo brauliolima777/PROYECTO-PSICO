@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="WebStyle.css" />
+    <title>PSICO SKATEBOARDS</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  
+div {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.head-container{
+    
+  display: flex;
+  justify-content: space-between;
+}
+.top-right {
+  display: flex;
+  justify-content: space-around;
+}
+.top-left {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu{ 
+  background-color: black;
+  margin: 0px;
+  overflow: hidden;
+}
+.nav-menu a {
+  font: menu;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  float: right;
+  display: inline-block;
+  color: rgb(182, 180, 149);
+  text-align: center;
+  padding: 16px 24px;
+}
+.nav-menu a:hover {
+  background: #ff9f1c;
+  color: black;
+}
+
+#slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 900px;
+  
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  
+}
+#slider figure img {
+  width: 20%;
+  float: left;
+  height: 1000px;
+}
+
+@keyframes slider {
+  0%  {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  90% {
+    left: -300%;
+  }
+  100%  {
+    left: -400%;
+  }
+}
+
+.container {
+  margin: 20px;
+  background-color: coral;
+  width: 100%;
+}
+#whats-new {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.wn-products{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+}
+.wn-products .wn-product{
+  
+}
+.wn-products .wn-product .image{
+  width: 100%;
+  height: 180px;
+  background-color: #c3c3c3;
+}
+.wn-products .wn-product .title{
+  background-color: red;
+}
+.wn-products .wn-product .description{
+  background-color: red;
+}
+.wn-products .wn-product .btn{
+  background-color: red;
+}
+
+
+
+
+
+</style>
+
+<body>
+    <div id="page" class="site">
+
+        <!--HEADER-->
+
+        <header class="top-header">
+            <div class="head-container">
+                <div class="top-left">
+                  <span class="adress">18 de julio 1111 - Tacuarembo 
+                   
+                  </span>
+                  <span class="phone">+589 98 123 123
+                   
+                  </span>
+                </div>
+
+                <div class="top-right">
+                    <div class="top-social-menu">
+                        <span>
+                          IG
+                        </span>
+                    </div>
+                  <div class="top-account-login">
+                    <span class="top-log-in">Login / Crear cuenta </span>
+                  </div>
+                  <ul class="navbar-user">
+                    <li><a href="#"><i class="fa fa-search" aria-hidden="true"i></i></a></li>
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"i></i></a></li>
+                    <li class="checkout">
+                      <a href="#">
+
+                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                         <div id="cartCantProducts"></div> - 
+                         <div id="cartTotal"></div>
+                      </a>
+                    </li>
+                  </ul>
+                  
+                </div>
+                
+                    
+            </div>
+                   
+        </header>
+
+         <!--Sticky Section// Logo + Navbar -->
+
+         <div class="nav-menu">
+           <a href="#">GORRAS</a>
+           <a href="#">REMERAS</a>
+           <a href="#">CANGUROS</a>
+           <a href="#">TABLAS</a>
+         
+         </div>
+         
+        
+       
+        <!--Main Section // 3 imagenes Slider -->
+        <div id="slider">
+          <figure>
+            <img src="Img&vids psico/Pilchas/remeras/slide1.jpg">
+            <img src="Img&vids psico/Backgroud/muhamed.jpg">
+            <img src="Img&vids psico/Pilchas/canguros/slide2.JPG">
+            <img src="Img&vids psico/Backgroud/willsmith.jpg">
+            <img src="Img&vids psico/Pilchas/remeras/slide1.jpg">
+          </figure>
+        </div>
+        <!--Section Whats New-->
+        <div class="container">
+          <div id="whats-new">
+            <h2>WHAT'S NEW</h2>
+          </div>
+          
+          <div id="wn-product-row">
+            <ul class="wn-products">
+              <li class="wn-product">
+               <div class="image"></div>
+               <div class="title">Titulo del prodcut</div>
+               <div class="description">Descipion</div>
+               <div class="btn">Comprar</div>
+              </li>
+              <li class="wn-product">
+                <div class="image"></div>
+               <div class="title">Titulo del prodcut</div>
+               <div class="description">Descipion</div>
+               <div class="btn">Comprar</div>
+              </li>
+              <li class="wn-product">
+                <div class="image"></div>
+               <div class="title">Titulo del prodcut</div>
+               <div class="description">Descipion</div>
+               <div class="btn">Comprar</div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <!--Section Skates-->
+
+        <!--Section Skate Videos-->
+
+        <!--Section Remeras-->
+
+        <!--Section Camguros-->
+
+        <!--Section Gorras-->
+
+        <!--Section Bumbags-->
+
+        <!---->
+
+
+        
+    </div>
+
+
+
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script>
+  var carrito = []
+
+  // let productos = [
+  //   {
+  //     id: 1,
+  //     title: 'Remera Xs',
+  //     description:'Tremenda remera',
+  //     price: 500
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Remera Blanca',
+  //     description:'Tremenda remera',
+  //     price: 300
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Remera Negra',
+  //     description:'Tremenda remera',
+  //     price: 350
+  //   }
+  // ]
+
+
+  $('.btn').click(()=>{
+    let product = {
+      id: 5,
+      title: 'Remera Como un Caballito',
+      description:'Tremenda remera',
+      price: 500
+    }
+    carrito.push(product)
+    console.log('ya lo agregue al carrito', carrito)
+    calcTotal()
+
+  })
+
+  function calcTotal(){
+    let total = 0
+    let cantProducts = 0
+    for( const product of carrito){
+      total += product.price
+      cantProducts ++
+    }
+    console.log(`Total ${total}`)
+    $('#cartTotal').html(total)
+    $('#cartCantProducts').html(cantProducts)
+  }
+    
+</script>
+
+
+
+</body>
+</html>
