@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="WebStyle.css" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<style>
+
+.product img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+</style>
+
+<body>
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">PSICO  skatebords</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span<i id="bar" class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Principal.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Vlog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <i class="far fa-search"></i>
+                <i class="far fa-shopping-cart"></i>
+                <div id="cartCantProducts"></div>
+                <div id="cartTotal"></div>
+              </li>
+              
+          </div>
+        </div>
+    </nav>
+
+    <section id="featured" class="my-5 py-5">
+        <div class="container mt5 py-5">
+          <h2 class="font-weight-bold">PSICO PRODUCTS</h2>
+          <hr>
+        </div>
+        <div class="row mx-auto container">
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/como-un-caballito-remera-full-color.jpg" alt=""> 
+            <h4 class="p-name">Como un caballito</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/cara-de-cabra-full-color.jpg" alt=""> 
+            <h4 class="p-name">Cara de Cabra</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-full-color.jpg" alt=""> 
+            <h4 class="p-name">American Psico</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-bw.jpg" alt=""> 
+            <h4 class="p-name">American Psico b/w</h4>
+            <h3 class="p-price">$450</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/como-un-caballito-remera-full-color.jpg" alt=""> 
+            <h4 class="p-name">Como un caballito</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/cara-de-cabra-full-color.jpg" alt=""> 
+            <h4 class="p-name">Cara de Cabra</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-full-color.jpg" alt=""> 
+            <h4 class="p-name">American Psico</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-bw.jpg" alt=""> 
+            <h4 class="p-name">American Psico b/w</h4>
+            <h3 class="p-price">$450</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/como-un-caballito-remera-full-color.jpg" alt=""> 
+            <h4 class="p-name">Como un caballito</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/cara-de-cabra-full-color.jpg" alt=""> 
+            <h4 class="p-name">Cara de Cabra</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-full-color.jpg" alt=""> 
+            <h4 class="p-name">American Psico</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-bw.jpg" alt=""> 
+            <h4 class="p-name">American Psico b/w</h4>
+            <h3 class="p-price">$450</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/como-un-caballito-remera-full-color.jpg" alt=""> 
+            <h4 class="p-name">Como un caballito</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/cara-de-cabra-full-color.jpg" alt=""> 
+            <h4 class="p-name">Cara de Cabra</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-full-color.jpg" alt=""> 
+            <h4 class="p-name">American Psico</h4>
+            <h3 class="p-price">$500</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="assets/Pilchas/remeras/american-psico-bw.jpg" alt=""> 
+            <h4 class="p-name">American Psico b/w</h4>
+            <h3 class="p-price">$450</h3>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+    <footer class="mt-5 py-5 text-center">
+        <div class="row container mx-auto pt-5">
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h3 class="text-uppercase">Psico Skateboards </h3>
+            <p>EST 19XX.<br> Promoviendo el crecimiento de la cultura del skate desde Tacuarembo al mundo</p>
+          </div>
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Featured</h5>
+            <ul class="text-uppercase list-unstyled mb-2">
+              <li><a href="#">Tablas</a></li>
+              <li><a href="#">Remeras</a></li>
+              <li><a href="#">Canguros</a></li>
+              <li><a href="#">Gorras</a></li>
+              
+            </ul>
+          </div>
+          
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <h5 class="pb-2">Contact Us</h5>
+            <div>
+              <h6 class="text-uppercase">Adress</h6>
+              <p>18 de Julio, 1111, Tacuarembo</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">Phone</h6>
+              <p>(+598) 333777</p>
+            </div>
+            <div>
+              <h6 class="text-uppercase">Email</h6>
+              <p>psicoskateboards@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="footer-one col-lg-3 col-md-6 col-12">
+            <div class="row">
+              <img class="img-fluid w-50 h-150 m-2" src="assets/LOGOS/dedos.png">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="copyright mt-5">
+          <div class="row container mx-auto">
+            <div class="col-lg-3 col-md-6 col-12">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script>
+  var carrito = []
+
+  // let productos = [
+  //   {
+  //     id: 1,
+  //     title: 'Remera Xs',
+  //     description:'Tremenda remera',
+  //     price: 500
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Remera Blanca',
+  //     description:'Tremenda remera',
+  //     price: 300
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Remera Negra',
+  //     description:'Tremenda remera',
+  //     price: 350
+  //   }
+  // ]
+
+
+  $('.btn').click(()=>{
+    let product = {
+      id: 5,
+      title: 'Remera Como un Caballito',
+      description:'Tremenda remera',
+      price: 500
+    }
+    carrito.push(product)
+    console.log('ya lo agregue al carrito', carrito)
+    calcTotal()
+
+  })
+
+  function calcTotal(){
+    let total = 0
+    let cantProducts = 0
+    for( const product of carrito){
+      total += product.price
+      cantProducts ++
+    }
+    console.log(`Total ${total}`)
+    $('#cartTotal').html(total)
+    $('#cartCantProducts').html(cantProducts)
+  }
+    
+</script>
+
+
+
+</body>
+</html>
