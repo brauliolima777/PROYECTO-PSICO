@@ -213,6 +213,31 @@
 
 
 
+<script src="product.js"></script>
+<script src="offer.js"></script>
+<script>
+    
+      let productHolder = document.getElementById('product-holder');
+      productHolder.innerHTML = ''
+    
+      let products = [new Product(1, 'Como un caballito', 'Tremenda remera', 500, 15, null,'assets/Pilchas/remeras/como-un-caballito-remera-full-color.jpg'),
+          new Product(2, 'Cara de Cabra', 'Alta remera', 500, 10, null, 'assets/Pilchas/remeras/cara-de-cabra-full-color.jpg'),
+          new Product(3, 'American Psico', 'American Psico', 500, 10, null, 'assets/Pilchas/remeras/american-psico-full-color.jpg'),
+          new Product(4, 'American Psico b/w', 'American b/w', 450, 5,
+            new Offer(1, new Date(2025, 12, 06), 0.5, false, 'Mitad de precio')
+            ,'assets/Pilchas/remeras/american-psico-bw.jpg'),
+      ]
+      let innerHTMLForProductHolder = ''
+      products.forEach(product => {
+          innerHTMLForProductHolder += product.asInnerHTMLForSection()
+      })
+    
+      productHolder.innerHTML = innerHTMLForProductHolder;
+     
+    
+    
+</script>
+
 
 
 
