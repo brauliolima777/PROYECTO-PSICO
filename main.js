@@ -37,11 +37,12 @@ function cartNumbers() {
     productNumbers = parseInt(productNumbers);
 
     if(productNumbers) {
+        console.log(productNumbers)
         localStorage.setItem('cartNumbers', productNumbers + 1);
-        document.querySelector('.far fa-shopping-cart span').textContent = productNumbers + 1;
+        document.getElementById("cartCantProducts").textContent = productNumbers + 1;
     } else {
         localStorage.setItem('cartNumbers', 1);
-        document.querySelector('.far fa-shopping-cart span').textContent = 1;
+        document.getElementById("cartCantProducts").textContent = 1;
     }
 
     
